@@ -15,12 +15,15 @@ body {
 }
 
 .menuDeNavegacion {
-    margin: 0;
     font-family: "Pompiere", sans-serif;
-    background: rgb(20, 11, 53);
+    margin-top: 6%;
+    padding: 0%;
     text-align: center;
     list-style: none;    
-    gap: 20px;
+    gap: -500px; 
+    background: rgba(0, 0, 0, 0.671);
+
+
 }
 
 .menuDeNavegacion li{
@@ -39,10 +42,133 @@ body {
     background-color: rgb(121, 121, 134);
 }
 
-.tit{
-    color: aliceblue;
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-  font-style: normal;
-  text-align: center;
+.linea-centro {
+    height: 5px;
+    width: 70%;
+    background: rgb(193, 188, 188);
+    margin: 100px auto;   
+    border-radius: 9px;
+    opacity: 1;
 }
+
+.linea-centro2 {
+    height: 3px;
+    width: 60%;
+    background: white;
+    margin: 10px auto; 
+    margin-top: -90px;      
+    border-radius: 9px;
+    opacity: 1;
+}
+
+.tit{
+    color: rgb(46, 44, 51);
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    font-size: 80px;
+}
+
+.parr{
+    color: rgb(0, 0, 0);
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+.linea-centro3 {
+    height: 3px;
+    width: 60%;
+    background: white;
+    margin: 10px auto; 
+    margin-top: 10px;      
+    border-radius: 9px;
+    opacity: 1;
+}
+
+.linea-centro4 {
+    height: 5px;
+    width: 70%;
+    background: rgb(193, 188, 188);
+    margin: 10px auto;   
+    border-radius: 9px;
+    opacity: 1;
+    
+}
+
+.servi {
+    margin-top: 4%;
+}
+
+.servicios {
+    margin-top: 7%;
+    color: aliceblue;
+    max-width: 1200px;
+    margin: 70px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.tarjeta {
+    perspective: 1000px;
+}
+
+.contenido-tarjeta {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.tarjeta:hover .contenido-tarjeta {
+    transform: rotateY(180deg);
+}
+
+.cara {
+    position: absolute;
+    width: 95%;
+    height: 90%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0.671);
+    backdrop-filter: blur(5px);
+}
+
+.cara:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0.671);
+    backdrop-filter: blur(5px);
+}
+
+.cara.frontal {
+    color: #ffffff;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.671);
+    backdrop-filter: blur(5px);
+}
+
+.cara.trasera {
+    background-color: #1e3042;
+    color: #ffffff;
+    transform: rotateY(180deg);
+    background: rgba(0, 0, 0, 0.671);
+    backdrop-filter: blur(5px);
+}
+
