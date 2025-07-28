@@ -2,11 +2,89 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleHome.css">
+    <link rel="stylesheet" href="boostrap/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
+    <link rel="home" href="home.html">
+    <link rel="portafolio" href="portafolio.html">
+    <link rel="servicios" href="servicios.html">
+    <link rel="nosotros" href="nosotros.html">
+    <link rel="contactos" href="contactos.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akronim&family=Bungee+Tint&family=Fascinate&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pompiere&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <title>GrafiWeb</title>
 </head>
 <body>
     
+    <header>
+            <nav>
+                <ul class="menuDeNavegacion">
+                    <li><a href="home.html">Inicio</a></li>
+                    <li><a href="portafolio.html">Portafolio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contactos.html">Contactos</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <div>
+        <br><br><br><br><br>
+    </div>
+
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="img/carrusel1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <hr class="linea-centro">
+                    <hr class="linea-centro2">
+                    <h1 class="tit"> El diseño vive en lo indómito! </h1>
+                    <p class="parr"> Tu marca no nació para ser común.
+                        Creamos piezas visuales con alma, estilo y propósito. </p>
+                    <hr class="linea-centro3">
+                    <hr class="linea-centro4">
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="img/carrusel2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/carrusel3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <hr class="linea-centro">
+                    <hr class="linea-centro2">
+                    <h1 class="tit"> Una explosión de formas, color y emoción! </h1>
+                    <p class="parr"> Exposición gráfica individual. </p>
+                    <hr class="linea-centro3">
+                    <hr class="linea-centro4">
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <div>
+        <br><br><br><br><br><br><br>
+    </div>
+    <script src="boostrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

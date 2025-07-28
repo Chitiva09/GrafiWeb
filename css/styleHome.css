@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+  background-image: url('../img/fondo2.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.menuDeNavegacion {
+    font-family: "Pompiere", sans-serif;
+    margin-top: 6%;
+    padding: 0%;
+    text-align: center;
+    list-style: none;    
+    gap: -500px; 
+    background: rgba(0, 0, 0, 0.671);
+
+
+}
+
+.menuDeNavegacion li{
+    display: inline-block;
+}
+
+.menuDeNavegacion li a{
+    display: inline-block;
+    font-size: 35px;
+    padding: 15px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.menuDeNavegacion li a:hover {
+    background-color: rgb(121, 121, 134);
+}
+
+.linea-centro {
+    height: 5px;
+    width: 70%;
+    background: rgb(193, 188, 188);
+    margin: 100px auto;   
+    border-radius: 9px;
+    opacity: 1;
+}
+
+.linea-centro2 {
+    height: 3px;
+    width: 60%;
+    background: white;
+    margin: 10px auto; 
+    margin-top: -90px;      
+    border-radius: 9px;
+    opacity: 1;
+}
+
+.tit{
+    color: rgb(46, 44, 51);
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    font-size: 80px;
+}
+
+.parr{
+    color: rgb(0, 0, 0);
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+.linea-centro3 {
+    height: 3px;
+    width: 60%;
+    background: white;
+    margin: 10px auto; 
+    margin-top: 10px;      
+    border-radius: 9px;
+    opacity: 1;
+}
+
+.linea-centro4 {
+    height: 5px;
+    width: 70%;
+    background: rgb(193, 188, 188);
+    margin: 10px auto;   
+    border-radius: 9px;
+    opacity: 1;
+    
+}
+
+.servi {
+    margin-top: 4%;
+}
+
+.servicios {
+    margin-top: 7%;
+    color: aliceblue;
+    max-width: 1200px;
+    margin: 70px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.tarjeta {
+    perspective: 1000px;
+}
+
+.contenido-tarjeta {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.tarjeta:hover .contenido-tarjeta {
+    transform: rotateY(180deg);
+}
+
+.cara {
+    position: absolute;
+    width: 95%;
+    height: 90%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0.671);
+    backdrop-filter: blur(5px);
+}
+
+.cara:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.5);
+    background: rgba(0, 0, 0, 0.671);
+    backdrop-filter: blur(5px);
+}
+
+.cara.frontal {
+    color: #ffffff;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.671);
+    backdrop-filter: blur(5px);
+}
+
+.cara.trasera {
+    background-color: #1e3042;
+    color: #ffffff;
+    transform: rotateY(180deg);
+    background: rgba(0, 0, 0, 0.671);
+    backdrop-filter: blur(5px);
+}
+
