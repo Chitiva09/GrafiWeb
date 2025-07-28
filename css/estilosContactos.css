@@ -1,0 +1,20 @@
+.whatsapp {
+    width: 10%;
+    z-index: 1;
+    top: 20%;
+    position: fixed;
+    right: 25%;
+    padding: 0%;
+    border-radius: 50%;
+    color: white;
+    background: rgba(0, 0, 0, 0.288);
+    backdrop-filter: blur(5px);
+    border: 0.05 solid #000814;
+    
+    box-shadow: 0 25px 50px rgb(32, 32, 32);
+    perspective: 1000px;
+    transition: transform 0.3s ease-in-out;
+} .whatsapp:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgb(4, 134, 255);
+}
